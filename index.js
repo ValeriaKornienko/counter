@@ -1,6 +1,6 @@
-const COUNTER = document.querySelector(".COUNTER");
-const MINUS = document.querySelector("#MINUS-button");
-const PLUS = document.querySelector("#PLUS-button");
+const COUNTER = document.querySelector(".counter");
+const MINUS = document.querySelector("#minus-button");
+const PLUS = document.querySelector("#plus-button");
 
 let count = 0;
 
