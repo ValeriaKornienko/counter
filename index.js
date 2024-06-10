@@ -1,33 +1,26 @@
-const counter = document.querySelector(".counter");
-const minus = document.querySelector("#minus-button");
-const plus = document.querySelector("#plus-button");
-const reset = document.querySelector(".reset-button");
+const COUNTER = document.querySelector(".COUNTER");
+const MINUS = document.querySelector("#MINUS-button");
+const PLUS = document.querySelector("#PLUS-button");
 
 let count = 0;
 
 const changeCount = () => {
-  counter.textContent = count;
+  COUNTER.textContent = count;
 };
 
 const onMinus = () => {
-  if (count > -10) {
-    count -= 1;
+  if (count > -100) {
+    count -= 10;
     changeCount();
   }
 };
 
 const onPlus = () => {
-  if (count < 10) {
-    count += 1;
+  if (count < 100) {
+    count += 10;
     changeCount();
   }
 };
 
-const onReset = () => {
-  count = 0;
-  changeCount();
-};
-
-minus.addEventListener("click", onMinus);
-plus.addEventListener("click", onPlus);
-reset.addEventListener("click", onReset);
+MINUS.addEventListener("click", onMinus);
+PLUS.addEventListener("click", onPlus);
