@@ -8,14 +8,18 @@ const changeCount = () => {
   COUNTER.textContent = count;
 };
 
-const onMinus = () => {
+const onMinus = (event) => {
+  event.preventDefault();
+
   if (count > -100) {
     count -= 10;
     changeCount();
   }
 };
 
-const onPlus = () => {
+const onPlus = (event) => {
+  event.preventDefault();
+
   if (count < 100) {
     count += 10;
     changeCount();
